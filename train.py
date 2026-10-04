@@ -112,11 +112,18 @@ def main():
                     "train_secs": train_secs}, last_path)
         json.dump(history, open("results/history.json", "w"), indent=1)
 
-    best_ep = min(history, key=lambda h: h["dev_loss"])["epoch"]
-    gpu = torch.cuda.get_device_name(0) if torch.cuda.is_available() else "cpu"
-    summary = {"trainable_params": n_params, "epochs_trained": len(history), "best_epoch": best_ep,
-               "best_dev_loss": best_dev, "train_minutes": round(train_secs / 60, 1), "gpu": gpu}
-    json.dump(summary, open("results/train_summary.json", "w"), indent=1)
+    json.dump(history, open("results/history.json", "w"), indent=1)  # also when resuming a finished run
+    summary_path = "results/train_summary.json"
+    if start_epoch >= args.epochs and os.path.exists(summary_path):
+        # training was already finished before: keep the summary written by the original run,
+        # it knows which GPU the training really used (this machine may be a different one)
+        summary = json.load(open(summary_path))
+    else:
+        best_ep = min(history, key=lambda h: h["dev_loss"])["epoch"]
+        gpu = torch.cuda.get_device_name(0) if torch.cuda.is_available() else "cpu"
+        summary = {"trainable_params": n_params, "epochs_trained": len(history), "best_epoch": best_ep,
+                   "best_dev_loss": best_dev, "train_minutes": round(train_secs / 60, 1), "gpu": gpu}
+        json.dump(summary, open(summary_path, "w"), indent=1)
     print(summary)
 
 
