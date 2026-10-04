@@ -101,6 +101,12 @@ Figures (all in `results/`): `pe_heatmap.png`, `loss_curves.png`, `lr_schedule.p
 
 Ten qualitative dev examples (5 right, 5 wrong): `results/samples.md`.
 
+## Poster and video
+
+![poster](results/poster.png)
+
+NotebookLM video overview: https://youtu.be/bQhbvAQq-e0
+
 ## Notes / limitations
 
 - Values are lower-cased (the starter code lower-cases everything), the official evaluator compares them case-insensitively.
