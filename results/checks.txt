@@ -1,0 +1,7 @@
+trainable params: 7577600
+dev_pairs.jsonl: kept 8421, skipped 0
+causal mask ok: True
+padding mask ok: True
+decoder cross-attn rows sum to 1: True
+encoder self-attn rows sum to 1: True
+weight sharing ok: True

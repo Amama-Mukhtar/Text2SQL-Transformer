@@ -1,5 +1,5 @@
 WikiSQL/
 __pycache__/
-checkpoints/
+checkpoints/last.pt
 spm_corpus.txt
 *_pairs.jsonl

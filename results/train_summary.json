@@ -1,0 +1,8 @@
+{
+ "trainable_params": 7577600,
+ "epochs_trained": 20,
+ "best_epoch": 18,
+ "best_dev_loss": 1.4455,
+ "train_minutes": 19.8,
+ "gpu": "Tesla T4"
+}

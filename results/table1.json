@@ -1,0 +1,29 @@
+{
+ "train": {
+  "pairs": 56355,
+  "src_mean": 42.5,
+  "src_max": 222,
+  "tgt_mean": 14.8,
+  "tgt_max": 65,
+  "dropped": 19,
+  "longer_than_limit": 19
+ },
+ "dev": {
+  "pairs": 8421,
+  "src_mean": 42.5,
+  "src_max": 167,
+  "tgt_mean": 14.8,
+  "tgt_max": 44,
+  "dropped": 0,
+  "longer_than_limit": 1
+ },
+ "test": {
+  "pairs": 15878,
+  "src_mean": 42.7,
+  "src_max": 260,
+  "tgt_mean": 14.9,
+  "tgt_max": 46,
+  "dropped": 0,
+  "longer_than_limit": 4
+ }
+}

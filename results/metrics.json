@@ -1,0 +1,35 @@
+{
+ "gold_roundtrip": {
+  "lf": 100.0,
+  "ex": 100.0,
+  "parse_fail": 0.0
+ },
+ "dev_greedy": {
+  "lf": 65.29,
+  "ex": 71.56,
+  "parse_fail": 0.0,
+  "n": 8421
+ },
+ "component_greedy": {
+  "sel": 93.4,
+  "agg": 89.76,
+  "where": 75.19
+ },
+ "dev_beam": {
+  "lf": 65.36,
+  "ex": 71.61,
+  "parse_fail": 0.01,
+  "n": 8421
+ },
+ "component_beam": {
+  "sel": 93.47,
+  "agg": 89.75,
+  "where": 75.37
+ },
+ "test_beam": {
+  "lf": 65.05,
+  "ex": 71.39,
+  "parse_fail": 0.09,
+  "n": 15878
+ }
+}

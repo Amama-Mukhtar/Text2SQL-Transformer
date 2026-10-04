@@ -1,0 +1,6 @@
+dev example 0: what position does the player who played for butler cc (ks) play? <sep> <c0> player <c1> no. <c2> nationality <c3> position <c4> years in toronto <c5> school/club team
+
+generated <c3> -> most attended source token: ▁position (belongs to column None) match=False
+generated <c0> -> most attended source token: <c5> (belongs to column 5) match=False
+
+over the first 200 dev examples: 48/422 generated column tokens (11.4%) have their strongest attention inside the matching source column
