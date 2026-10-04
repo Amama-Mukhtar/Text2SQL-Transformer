@@ -4,7 +4,10 @@ Generative AI, Fall 2026, Assignment 2. An English question + the column names o
 The encoder-decoder Transformer from *Attention Is All You Need* is written by us in plain PyTorch
 (no `nn.Transformer`, no `nn.MultiheadAttention`, no pretrained weights) and trained once from random init.
 
-**Team:** Amama Mukhtar and Zeenat Ijaz &nbsp;|&nbsp; **Blog:** <medium link> &nbsp;|&nbsp; **LinkedIn:** <post link>
+**Team:** Amama Mukhtar and Zeenat Ijaz &nbsp;|&nbsp; **Live app:** https://text2sql-transformer-tunf5jp9xnb7khacmoryr7.streamlit.app/ &nbsp;|&nbsp; **Blog:** https://medium.com/@amamamukhtar17/teaching-a-transformer-to-write-sql-we-built-it-from-scratch-on-wikisql-e1e06620d6fe &nbsp;|&nbsp; **LinkedIn:** <post link>
+
+
+
 
 ## Repo layout
 
